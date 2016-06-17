@@ -39,6 +39,7 @@ else
         echo -n "Reveiver Username: "
         read name
         clear
+        echo -e "$topsign"
         name=${name// /_}
         sudo ssh-copy-id $name@$ip
         clear
